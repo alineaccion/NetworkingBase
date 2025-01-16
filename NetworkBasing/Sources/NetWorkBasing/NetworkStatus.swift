@@ -8,6 +8,8 @@
 import SwiftUI
 import Network
 
+// TODO: Preprocess the network status inside the NWPathMonitor closure and then assign it to the `status` property on the MainActor.
+// This will separate responsibilities, reduce the workload on the MainActor, and improve code clarity.
 // MARK: - Global Actor
 @globalActor
 public actor NetworkActor {
